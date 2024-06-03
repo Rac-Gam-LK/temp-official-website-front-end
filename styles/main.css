@@ -48,11 +48,12 @@
 .h6,
 .p {
     font-family: var(--font-family);
+    text-align: left;
 }
 
 .h1 {
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 400;
     font-style: bold;
 }
 
@@ -96,6 +97,22 @@
 
 .gap{
     margin-bottom: var(--default-btw-gap);
+}
+
+.a-button {
+    background-color: var(--theme-color-2);
+    color: white;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    border: 1px solid var(--theme-color-2);
+    display: block;
+    width: fit-content;
+}
+
+.img {
+    height: auto;
+    width: 100%;
+    border-radius: 1rem;
 }
 
 .title {
@@ -158,7 +175,7 @@
     /* padding: 0 20px; */
 }
 
-@media (max-width: 783px){
+@media (max-width: 837px){
     .links-container{
         /* display: none; */
         flex-direction: column;

@@ -1,3 +1,5 @@
+/* The styles are mobile first. */
+
 #bg-img {
     background-image: url("../resources/images/background_image.png");
     background-repeat: no-repeat;
@@ -40,3 +42,44 @@
     margin-bottom: 10px;
 } */
 
+#avenues-div{
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+}
+
+.single-avenue{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 3;
+    padding: 1rem;
+    margin: 0 auto;
+
+}
+
+.single-avenue img {
+    height: auto;
+    width: 100%;
+    border: 2px solid orange;
+    border-radius: 1rem;
+}
+
+#aboutus-div{
+    /* padding: 1rem; */
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 2;
+}
+
+#aboutus-img-div img {
+    height: auto;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+#to-the-stars{
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 2;
+    gap: 1rem;
+}
