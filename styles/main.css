@@ -32,6 +32,8 @@
     --container-width-sm: 94%;
     --container-width-md: 90%;
     --container-width-lg: 80%;
+
+    --nav-height: 60px;
 }
 
 .a {
@@ -92,24 +94,16 @@
     width: var(--container-width-sm);
 }
 
-/* .nav-ul {
-    list-style-type: none;
+.gap{
+    margin-bottom: var(--default-btw-gap);
 }
 
-#nav-hamburger-icon{
-    font-size: 2em;
-    display: inline;
+.title {
+    font-size: 30px;
 }
-
-.nav-logo{
-    height: auto;
-    width: 40%;
-    border: 2px solid red;
-    display: inline;
-} */
 
 #nav{
-    height: 60px;
+    height: var(--nav-height);
     background-color: var(--theme-color-2);
     display: flex;
     justify-content: flex-end;
