@@ -1,0 +1,38 @@
+#img-carousel {
+    width: 100%;
+    height: 80vh;
+    /* border: 1px solid orange; */
+}
+
+#img-carousel__container {
+    width: 100%;
+    height: 100%;
+    background-image: url("../resources/images/background_image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#project-items-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, fit-content);
+    gap: 1rem;
+}
+
+.project-item{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* .project-text-container{
+    display: grid;
+    grid-area: 1rem;
+} */
+
+.project-description{
+    text-align: justify;
+}

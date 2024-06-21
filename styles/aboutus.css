@@ -1,0 +1,46 @@
+#img-carousel {
+    width: 100%;
+    height: 80vh;
+    /* border: 1px solid orange; */
+}
+
+#img-carousel__container {
+    width: 100%;
+    height: 100%;
+    background-image: url("../resources/images/background_image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#aboutus-section--div__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.aboutus-section-item{
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    /* border: 5px solid var(--theme-color-1); */
+    border-radius: 1rem;
+    /* padding: 1rem; */
+}
+
+.aboutus-section-item-title-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#joinus--div__container{
+    display: grid;
+    gap: 1rem;
+}
+
+#joinus-a-btn-container{
+    margin: 0 auto;
+}

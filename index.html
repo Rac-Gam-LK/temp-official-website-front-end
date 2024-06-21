@@ -4,28 +4,302 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/home.css">
-    <title>Rotaract Gampaha | Home</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <script src="https://kit.fontawesome.com/e1ac0b3521.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="./resources/images/club_logo.png">
+    <title>Rotaract Club of Gampaha | Home</title>
 </head>
 
-<body>
-    <!-- <div class="container">
-        <h1 class="h1">Hello World</h1>
-        <h2 class="h2">Hello World</h2>
-        <h3 class="h3">Hello World</h3>
-        <h4 class="h4">Hello World</h4>
-        <h5 class="h5">Hello World</h5>
-        <h6 class="h6">Hello World</h6>
-        <p class="p">Hello World...</p>
+<body id="body">
+    <nav id="navbar">
+        <div>
+            <img src="./resources/images/club_logo_v2.png" class="navbar--logo__size--responsive">
+        </div>
+        <input type="checkbox" id="navbar--sidebar-active">
+        <label for="navbar--sidebar-active" class="open-sidebar-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+        </label>
+
+        <label id="overlay" for="navbar--sidebar-active"></label>
+
+        <div class="links-container">
+            <label for="navbar--sidebar-active" class="close-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#ffffff">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg>
+            </label>
+
+            <a href="./index.html" class="a home-link">Home</a>
+            <a href="./aboutus.html" class="a">About Us</a>
+            <a href="./contact.html" class="a">Contact Us</a>
+            <a href="./newsletter.html" class="a">Newsletter</a>
+            <a href="./blogs-and-podcasts.html" class="a">Blogs & Podcasts</a>
+            <a href="./projects.html" class="a">Projects</a>
+            <a href="./gallery.html" class="a">Gallery</a>
+        </div>
+    </nav>
+
+    <div id="img-carousel" class="mrg-btm">
+        <div id="img-carousel__container">
+        </div>
+    </div>
+
+    <div id="club-services" class="container mrg-btm">
+        <div id="club-services-title-container" class="mrg-btm">
+            <h1 id="club-services-title" class="h1">Avenues</h1>
+        </div>
+        <div id="club-services--div__container">
+            <div id="club-service__item1" class="club-service__item">
+                <div class="club-service-item-image-container">
+                    <img src="./resources/images/Community Service.png" class="club-service-item-image img">
+                </div>
+                <div class="club-service-item-title-container">
+                    <h2 class="club-service-item-title">Community Service</h2>
+                </div>
+                <div class="club-service-item-description-container">
+                    <p class="club-service-item-description p">Caring for Communities Everywhere - Our community service
+                        avenue team focus on areas like Environmental Service, Health and Wellness, Education and
+                        Literacy, Community Development and Infrastructure, Hunger and Homelessness, Youth and Children
+                        Services, Elderly and Vulnerable Groups Support, Disaster Response and Relief, Cultural and
+                        Heritage Promotion (Local), Animal Welfare etc.
+                    </p>
+                </div>
+            </div>
+            <div id="club-service__item2" class="club-service__item">
+                <div class="club-service-item-image-container">
+                    <img src="./resources/images/Professional Development.png" class="club-service-item-image img">
+                </div>
+                <div class="club-service-item-title-container">
+                    <h2 class="club-service-item-title">Professional Development</h2>
+                </div>
+                <div class="club-service-item-description-container">
+                    <p class="club-service-item-description p">
+                        Skills for Success, Growth for Life - Our Professional Development Avenue team focuses on the
+                        following areas. Career Development, Skills Training and Workshops, Networking and Mentorship,
+                        Entrepreneurship and Innovation, Professional Ethics and Conduct, Financial Literacy and
+                        Management, Global Opportunities and Exchange, Industry-Specific Development, Personal
+                        Development, Technology and Digital Skills, Leadership Development etc.
+                    </p>
+                </div>
+            </div>
+            <div id="club-service__item3" class="club-service__item">
+                <div class="club-service-item-image-container">
+                    <img src="./resources/images/Club Service.png" class="club-service-item-image img">
+                </div>
+                <div class="club-service-item-title-container">
+                    <h2 class="club-service-item-title">Club <br> Service</h2>
+                </div>
+                <div class="club-service-item-description-container">
+                    <p class="club-service-item-description p">
+                        Unity Through Service, Strength Through Fellowship - Areas focused by our club service team
+                        includes; Membership Development and Retention, Fellowship and Social Activities, Inter-Club
+                        Relations and Networking, Club Culture and Traditions, Diversity and Inclusion.
+                    </p>
+                </div>
+            </div>
+            <div id="club-service__item4" class="club-service__item">
+                <div class="club-service-item-image-container">
+                    <img src="./resources/images/International Service.png" class="club-service-item-image img">
+                </div>
+                <div class="club-service-item-title-container">
+                    <h2 class="club-service-item-title">International Services</h2>
+                </div>
+                <div class="club-service-item-description-container">
+                    <p class="club-service-item-description p">
+                        Connecting Continents through Cultural Beauty - Our International service avenue team focus on
+                        areas such as International Projects and Collaborations, Cultural Exchange Programs, Global
+                        Awareness and Education, Global Health Initiatives, International Fundraising and Support,
+                        International Friendship and Networking, Language and Communication Skills.
+                    </p>
+                </div>
+            </div>
+            <div id="club-service__item5" class="club-service__item">
+                <div class="club-service-item-image-container">
+                    <img src="./resources/images/application.png" class="club-service-item-image img">
+                </div>
+                <div class="club-service-item-title-container">
+                    <h2 class="club-service-item-title">Other<br>Avenues</h2>
+                </div>
+                <div class="club-service-item-description-container">
+                    <p class="club-service-item-description p">
+                        Service in Every Form, Impact in Every Act - Other than the four core avenues, our club focuses
+                        on avenues including PR, Regional Engagement, Fundraising and partnerships, Digital Coms (IT &
+                        Media)and Sports.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="club-stats" class="container mrg-btm">
+        <div id="club-stats--div__container">
+
+        </div>
     </div> -->
 
+    <div id="about-us" class="container mrg-btm">
+        <div id="about-us--div__container">
+            <div id="about-us-img__container">
+                <img src="./resources/images/background_image.png" alt="" id="about-us-img" class="img">
+            </div>
+            <div id="about-us-text-container">
+                <div id="about-us-text-title-container">
+                    <h1 id="about-us-text-title" class="h1">About Us</h1>
+                </div>
+                <div id="about-us-text-description-container">
+                    <p id="about-us-text-description" class="p">
+                        Welcome to Rotaract Club of Gampaha, a community of young professionals and students dedicated
+                        to making a positive impact in local and global communities.
 
+                        We have been actively engaged in various service projects, ranging from community development
+                        initiatives to international partnerships. Our diverse membership brings together individuals
+                        from different backgrounds and disciplines, united by a shared passion for service and a desire
+                        to create meaningful change.
+                        At Rotaract Gampaha, we believe in the power of collaboration and collective action. Through our
+                        projects and activities, we strive to address pressing social issues, promote sustainable
+                        development, and empower individuals to reach their full potential.
+                        Join us in our mission to make a difference, build connections, and inspire others to take
+                        action. Together, we can create a better world for all.
+
+                    </p>
+                </div>
+                <div id="about-us-read-more-a-btn-container" class="a-btn-container">
+                    <a href="#" class="a">Read More...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cards" class="container mrg-btm">
+        <div id="cards--div__container">
+            <div id="card1-container" class="card">
+                <div class="card-img-container">
+                    <img src="./resources/images/background_image.png" alt="" class="card-img img">
+                </div>
+                <div class="card-title-container">
+                    <h2 class="h2">Projects</h2>
+                </div>
+                <div class="card-description-container">
+                    <p class="p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum cupiditate, magni
+                        similique nostrum quibusdam repellat quos esse dolore blanditiis inventore odio nemo assumenda
+                        quasi dolorem. A, eum laboriosam! Eaque fuga, suscipit adipisci ipsam quia culpa aliquid, fugit
+                        deleniti beatae nihil ut recusandae esse voluptatum pariatur natus modi aspernatur minus
+                        incidunt.
+                    </p>
+                </div>
+                <div class="card-a-btn-container a-btn-container">
+                    <a href="#" class="a">View</a>
+                </div>
+            </div>
+            <div id="card2-container" class="card">
+                <div class="card-img-container">
+                    <img src="./resources/images/background_image.png" alt="" class="card-img img">
+                </div>
+                <div class="card-title-container">
+                    <h2 class="h2">Gallery</h2>
+                </div>
+                <div class="card-description-container">
+                    <p class="p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum cupiditate, magni
+                        similique nostrum quibusdam repellat quos esse dolore blanditiis inventore odio nemo assumenda
+                        quasi dolorem. A, eum laboriosam! Eaque fuga, suscipit adipisci ipsam quia culpa aliquid, fugit
+                        deleniti beatae nihil ut recusandae esse voluptatum pariatur natus modi aspernatur minus
+                        incidunt.
+                    </p>
+                </div>
+                <div class="card-a-btn-container a-btn-container">
+                    <a href="#" class="a">View</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="newsletter" class="container mrg-btm">
+        <div id="newsletter--div__container">
+            <div id="newsletter-text-container">
+                <div id="newsletter-text-title-container">
+                    <h1 class="h1">Newsletter</h1>
+                </div>
+                <div id="newsletter-text-description-container">
+                    <p class="p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque voluptatum
+                        modi illum nam mollitia consequuntur, fugiat voluptas magnam nostrum quos, dolor dolorum qui,
+                        assumenda ut expedita cumque odio fugit facere in necessitatibus repellendus error eveniet?
+                        Deserunt minus omnis perferendis eum pariatur tempora fugiat! Necessitatibus officia ipsam sit
+                        officiis corrupti?</p>
+                </div>
+                <div id="newsletter-readmore-a-btn-container" class="a-btn-container">
+                    <a href="#" class="a">View</a>
+                </div>
+            </div>
+            <div id="newsletter-img-container">
+                <img src="./resources/images/background_image.png" alt="" class="img">
+            </div>
+        </div>
+    </div>
+
+    <div id="blogs-podcasts" class="container mrg-btn">
+        <div id="blogs-podcasts--div__container">
+            <div id="blogs-podcasts-img-container">
+                <img src="./resources/images/background_image.png" alt="" class="img">
+            </div>
+            <div id="blogs-podcasts-text-container">
+                <div id="blogs-podcasts-title-container">
+                    <h1 class="h1">Blogs & Podcasts</h1>
+                </div>
+                <div id="blogs-podcasts-description-container">
+                    <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, a maxime. Vero molestias
+                        quod ex architecto? Porro quia tempore qui ducimus fuga quod a consequuntur natus, accusamus
+                        dolore quis, eaque corporis? Eos rem inventore neque facilis repudiandae laboriosam qui tempore
+                        aperiam veritatis temporibus voluptas doloribus ex soluta, laborum repellat magni.
+                    </p>
+                </div>
+                <div id="blogs-podcasts-a-btn-container" class="a-btn-container">
+                    <a href="" class="a">View</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="join-us" class="mrg-btm">
+        <div id="join-us--div__container">
+            <div id="join-us-title" class="mrg-btm">
+                <h3 class="h2">Want to make a difference?</h3>
+            </div>
+            <div id="join-us-btn-container" class="a-btn-container">
+                <a href="" class="a">Join Us</a>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div id="footer--div__container">
+            <div id="footer-social-media-handlers-container">
+                <div id="footer-social-media-handler-yt" class="footer-social-media-handler-container">
+                    <a href="" class="footer-social-media-handler a"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div id="footer-social-media-handler-x" class="footer-social-media-handler-container">
+                    <a href="" class="footer-social-media-handler a"><i class="fa-brands fa-square-x-twitter"></i></a>
+                </div>
+                <div id="footer-social-media-handler-tiktok" class="footer-social-media-handler-container">
+                    <a href="" class="footer-social-media-handler a"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <div id="footer-social-media-handler-li" class="footer-social-media-handler-container">
+                    <a href="" class="footer-social-media-handler a"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div id="footer-social-media-handler-fb" class="footer-social-media-handler-container">
+                    <a href="" class="footer-social-media-handler a"><i class="fa-brands fa-square-facebook"></i></a>
+                </div>
+            </div>
+            <div id="copyrights-container">
+                <p id="copyrights-text">&copy; Rotaract Club of Gampaha. All Rights Reserved 2024.
+                </p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
