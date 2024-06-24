@@ -46,6 +46,20 @@
 
     <div id="img-carousel" class="mrg-btm">
         <div id="img-carousel__container">
+            <div class="carousel">
+                <div class="slide">
+                    <img src="./resources/images/avurudu_24.jpeg" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img src="./resources/images/bonding_bash.jpg" alt="Image 2">
+                </div>
+                <div class="slide">
+                    <img src="./resources/images/background_image.png" alt="Image 3">
+                </div>
+                <!-- Optional navigation buttons -->
+                <div class="prev">&#10094;</div>
+                <div class="next">&#10095;</div>
+            </div>
         </div>
     </div>
 
@@ -322,6 +336,27 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.transform = `translateX(${100 * (i - index)}%)`;
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        setInterval(nextSlide, 3000); // Change slide every 3 seconds
+
+        // Initialize the first slide
+        showSlide(currentSlide);
+    </script>
 
 </body>
 
