@@ -15,9 +15,11 @@
 
 #aboutus-section--div__container{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .aboutus-section-item{
@@ -25,9 +27,9 @@
     grid-template-columns: 1;
     grid-template-rows: repeat(2, 1fr);
     gap: 1rem;
-    /* border: 5px solid var(--theme-color-1); */
+    border: 5px solid var(--theme-color-2);
     border-radius: 1rem;
-    /* padding: 1rem; */
+    padding: 1rem;
 }
 
 .aboutus-section-item-title-container{
