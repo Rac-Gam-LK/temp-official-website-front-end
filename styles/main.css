@@ -5,7 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    scrollbar-color: var(--theme-color-3) var(--theme-color-4);
+    scrollbar-color: var(--theme-color-2) var(--theme-color-4);
 }
 
 :root {
@@ -19,11 +19,11 @@
     --default-btw-gap: 3rem;
     --default-navbar-height: 60px;
 
-    --theme-color-1: #D91E41;
-    --theme-color-2: #8C142A;
-    --theme-color-3: #F26B83;
+    --theme-color-1: #73020C;
+    --theme-color-2: #011126;
+    --theme-color-3: #8C1127;
     --theme-color-4: #F2F2F2;
-    --theme-color-5: #D9A282;
+    --theme-color-5: #262626;
 
     --screen-size-mobile-sm: 320px;
     --screen-size-mobile-md: 375px;
@@ -128,7 +128,7 @@
 
 .a-btn-container{
     background-color: var(--theme-color-3);
-    width: 30%;
+    width: 20%;
     height: fit-content;
     padding: 15px;
     border-radius: 0.2rem;
@@ -153,6 +153,7 @@
 
 .h1{
     font-size: 2.5em;
+    color: #8c1127;
 }
 
 .p{
