@@ -73,10 +73,27 @@
     }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 426px) {
     #club-services--div__container {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: repeat(5, fit-content);
+    }
+    .club-service-item-image-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .club-service-item-image{
+        height: auto;
+        width: 50%;
+    }
+    .club-service__item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #about-us-read-more-a-btn-container{
+        width: fit-content;
     }
 }
 
@@ -133,6 +150,19 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1;
     gap: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .a-btn-container{
+        width: fit-content;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    #cards--div__container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, fit-content);
+    }
 }
 
 .card {

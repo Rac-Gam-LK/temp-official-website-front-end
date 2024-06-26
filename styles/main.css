@@ -292,3 +292,10 @@
     text-align: center;
     color: white;
 }
+
+@media only screen and (max-width: 375px) {
+    #footer-social-media-handlers-container{
+        display: flex;
+        flex-direction: row;
+    }
+}
