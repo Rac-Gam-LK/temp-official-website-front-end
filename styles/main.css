@@ -292,9 +292,10 @@
     color: var(--theme-color-3);
 }
 
-#copyrights-container{
+.copyrights-text{
     text-align: center;
     color: white;
+    line-height: var(--default-line-height);
 }
 
 @media only screen and (max-width: 375px) {
