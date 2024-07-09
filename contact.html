@@ -9,6 +9,15 @@
     <script src="https://kit.fontawesome.com/e1ac0b3521.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="./resources/images/club_logo.png">
     <title>Rotaract Club of Gampaha | Contact Us</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T3NFHJQQ1R"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-T3NFHJQQ1R');
+    </script>
 </head>
 
 <body id="body">
@@ -65,7 +74,8 @@
                 </form>
             </div> -->
             <div class="container p">
-                <form action="https://formspree.io/f/mldrrlgn" method="POST" id="contactForm" class="contact-form" onsubmit="return validatePhoneNumber()">
+                <form action="https://formspree.io/f/mldrrlgn" method="POST" id="contactForm" class="contact-form"
+                    onsubmit="return validatePhoneNumber()">
                     <h2 class="h1">Contact Us</h2>
                     <div class="form-group">
                         <label for="name">Name</label>
@@ -169,16 +179,16 @@
         function validatePhoneNumber() {
             const phoneInput = document.getElementById('phone').value;
             const phonePattern = /^[0-9]{10,15}$/; // Adjust the pattern according to your phone number format requirement
-        
+
             if (!phonePattern.test(phoneInput)) {
                 alert("Please enter a valid phone number.");
                 return false; // Prevent form submission
             }
-        
+
             return true; // Allow form submission
         }
     </script>
-        
+
 
 </body>
 
